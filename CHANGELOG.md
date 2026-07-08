@@ -1,4 +1,10 @@
 # Changelog
+## [v1.0.1] - 2026-07-08
+
+### Changed
+
+- 添加同步脚本，支持自动更新CHANGELOG和推送GitHub
+
 
 All notable changes to this project will be documented in this file.
 
