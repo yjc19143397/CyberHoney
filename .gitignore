@@ -1,0 +1,62 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Distribution / packaging
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+.honey.log
+
+# Database
+data/
+*.db
+
+# Cache
+.cache/
+*.cache
+.honeypot/
+
+# Virtual environment
+.venv/
+.env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Windows
+*.exe
+*.dll
+*.manifest
+*.rc
+
+# Generated files
+*.pyc
+*.pyo
+*.pyd
+*.so
