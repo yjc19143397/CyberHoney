@@ -52,8 +52,13 @@ def update_changelog(changelog_path, changes):
         if content.startswith('# Changelog'):
             # 在第一个版本之前插入新版本
             lines = content.split('\n')
-            insert_idx = lines.index('') if '' in lines else 4
-            lines.insert(insert_idx, header + change_items + '\n')
+            # 找到第一个空行（在标题和第一版本之间）
+            insert_idx = 4  # 默认位置
+            for i, line in enumerate(lines):
+                if i > 1 and line.startswith('## ['):
+                    insert_idx = i
+                    break
+            lines.insert(insert_idx, header + change_items)
             content = '\n'.join(lines)
         else:
             content = header + change_items + '\n\n' + content

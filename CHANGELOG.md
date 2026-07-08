@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.2] - 2026-07-08
+
+### Changed
+
+- 添加了自动同步
 ## [v1.0.1] - 2026-07-08
 
 ### Changed
