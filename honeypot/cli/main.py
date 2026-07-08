@@ -49,7 +49,7 @@ def status():
 
 @cli.command()
 def version():
-    click.echo("CyberHoney v1.0.0")
+    click.echo("CyberHoney v1.0.3")
 
 if __name__ == '__main__':
     cli()

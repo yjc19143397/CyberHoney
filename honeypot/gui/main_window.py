@@ -102,7 +102,7 @@ class AboutDialog(QMessageBox):
         self.setIcon(QMessageBox.Icon.Information)
         about_text = (
             '<h2>CyberHoney 蜜罐管理系统</h2>'
-            '<p>版本: 1.0.0</p>'
+            '<p>版本: 1.0.3</p>'
             '<p>一款多服务蜜罐系统，用于网络安全监控和攻击检测。</p>'
             '<p></p>'
             '<p><strong>支持的服务:</strong></p>'
@@ -267,9 +267,6 @@ class MainWindow(QMainWindow):
 
         layout.addWidget(splitter)
 
-        log_panel = self._create_log_panel()
-        layout.addWidget(log_panel)
-
         self.status_bar = QStatusBar()
         self.setStatusBar(self.status_bar)
         self._update_admin_status()
@@ -284,11 +281,12 @@ class MainWindow(QMainWindow):
         self._lazy_initialized = True
 
         self._init_log_handler()
-        self._init_honeypot()
-        self._init_data_timer()
 
         if hasattr(self, '_right_panel_stub'):
             self._replace_right_panel_stub()
+
+        self._init_honeypot()
+        self._init_data_timer()
 
     def _init_log_handler(self):
         self._log_emitter = LogSignalEmitter()

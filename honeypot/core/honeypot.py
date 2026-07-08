@@ -38,7 +38,7 @@ class Honeypot:
             
             if self.config.get('api.enabled', True):
                 from honeypot.api.server import APIServer
-                api_server = APIServer(self.config, self.logger, self.database)
+                api_server = APIServer(self)
                 self.service_manager.register_service('api', api_server)
         except Exception as e:
             self.logger.error(f"Failed to load services: {e}")

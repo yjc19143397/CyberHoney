@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.4] - 2026-07-08
+
+### Changed
+
+- 修复GUI启动问题和APIServer实例化错误
+- 同步所有版本号为1.0.3
+- 优化初始化顺序
+- 删除不存在的_create_log_panel调用
 ## [v1.0.3] - 2026-07-08
 
 ### Changed

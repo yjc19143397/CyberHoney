@@ -21,7 +21,7 @@ def get_current_version(changelog_path):
         match = re.search(r'## \[v([\d.]+)\]', content)
         if match:
             return match.group(1)
-    return "1.0.0"
+    return "1.0.3"
 
 def increment_version(version):
     """递增版本号"""
