@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='CyberHoney',
-    version='1.0.3',
+    version='1.0.4',
     description='A multi-service honeypot for cybersecurity monitoring',
     author='Yjc',
     author_email='yjc19143397@163.com',

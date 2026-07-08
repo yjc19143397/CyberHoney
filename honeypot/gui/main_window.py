@@ -102,7 +102,7 @@ class AboutDialog(QMessageBox):
         self.setIcon(QMessageBox.Icon.Information)
         about_text = (
             '<h2>CyberHoney 蜜罐管理系统</h2>'
-            '<p>版本: 1.0.3</p>'
+            '<p>版本: 1.0.4</p>'
             '<p>一款多服务蜜罐系统，用于网络安全监控和攻击检测。</p>'
             '<p></p>'
             '<p><strong>支持的服务:</strong></p>'
